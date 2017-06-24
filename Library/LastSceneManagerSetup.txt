@@ -1,0 +1,4 @@
+sceneSetups:
+- path: "Assets/Cora\xE7\xE3o em jogo.unity"
+  isLoaded: 1
+  isActive: 1
