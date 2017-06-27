@@ -17,7 +17,6 @@ public class PlayerControl : MonoBehaviour {
 
 		transform.position = new Vector3(-12.17f, -3.4f, transform.position.z);
 
-
 		if(Input.GetKeyDown(KeyCode.RightArrow)) {
 			if(!lastRight)
 				moveRight (step);
@@ -41,6 +40,7 @@ public class PlayerControl : MonoBehaviour {
 		
 	void OnCollisionEnter(Collision collision)
 	{
+		transform.position = new Vector3(-12.17f, -3.4f, transform.position.z);
 		if (collision.gameObject.name == "Road1")
 			lastLeft = true;
 		else if (collision.gameObject.name == "Road5")
